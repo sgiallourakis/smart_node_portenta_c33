@@ -1,0 +1,74 @@
+
+.qodo
+# -------------------------
+# OS / Editor
+# -------------------------
+.DS_Store
+Thumbs.db
+*~
+
+# -------------------------
+# IDEs
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------------
+# C / C++ Build Artifacts
+# -------------------------
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.elf
+*.hex
+*.bin
+*.map
+
+# -------------------------
+# Build Directories
+# -------------------------
+build/
+build-*/
+out/
+bin/
+obj/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+compile_commands.json
+
+# -------------------------
+# PlatformIO / Embedded
+# -------------------------
+.pio/
+.platformio/
+
+# -------------------------
+# Logs / Temp
+# -------------------------
+*.log
+*.tmp
+*.cache
+
+# -------------------------
+# Archives
+# -------------------------
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+
+# -------------------------
+# Debug / Core Dumps
+# -------------------------
+core
+core.*
+*.dSYM/
