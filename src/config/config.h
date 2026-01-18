@@ -13,3 +13,11 @@
 
 // --- Debug ---
 #define DEBUG_SERIAL        1           // PLACEHOLDER
+
+// --- WiFi broadcast window ---
+#define WIFI_BROADCAST_HOUR    19    // 07:00PM
+#define WIFI_WINDOW_MINUTES    10    // minutes of ON-TIME
+
+// --- AP settings ---
+#define WIFI_SSID        "CCI-SMART-NODE"
+#define WIFI_PASSWORD    "3cHoDe#o1649342"

@@ -5,12 +5,15 @@
 #include "analysis/daily_runner.h"
 #include "time/rtc.h"
 #include "packets/sensor_packet.h"
+#include "wifi/wifi_manager.h"
+
 
 void setup() {
     Serial.begin(115200)
 
     lora_init();
     storage_init();
+    wifi_init();
 }
 
 void loop() {
@@ -28,4 +31,14 @@ void loop() {
     if (is_new_day()) {
         run_daily_analysis();
     }
+    
+    // WiFi schedule check
+    uint32_t now = rtc_now();
+    uint8_t hour = (now / 3600) % 24;
+
+    if (hour == WIFI_BROADCAST_HOUR && !wifi_active()) {
+        wifi_start_ap();
+    }
+
+    wifi_loop();
 }
